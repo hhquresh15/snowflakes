@@ -19,3 +19,13 @@ models:
             tests:
                 - unique
                 - not_null
+
+sources:
+  - name: my_source
+    database: TARGET_DB
+    schema: DBT_PRACTICE
+    tables:
+      - name: bike 
+        identifier: BIKE
+      - name: weather
+        identifier: WEATHER
